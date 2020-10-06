@@ -1,0 +1,22 @@
+span.Impact{
+    color: red;
+    font-size: 50pt;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline;
+}
+span.Delicate{
+    color: black;
+    font-family: cursive;
+    font-style: normal;
+    font-size: 25pt;
+}
+#Highlight{
+    background-color: yellow;
+    font-family: cursive;
+    font-style: italic;
+}
+div.BackgroundImage{ 
+    background-image: url(Jackson_Pollock_Mural.jpg); 
+    background-color: #cccccc;
+}
