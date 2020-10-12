@@ -2,22 +2,61 @@
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     </head>
+    <script>
+        function checkForm()
+        {
+            var firstName;
+            firstName = document.getElementById("firstname").value;
+            var lastName;
+            lastName = document.getElementById("lastname").value;
+            var emailAddress;
+            emailAddress = document.getElementById("e-mailaddress").value;
+            if(firstName == "")
+            {
+            document.getElementById("firstname").style.backgroundColor = "red";
+            document.getElementById("firstname").focus();
+            }
+            else
+            {
+            document.getElementById("firstname").style.backgroundColor = "white";
+            }
+            if(lastName == "")
+            {
+                document.getElementById("lastname").style.backgroundColor = "red";
+                document.getElementById("lastname").focus();
+            }
+            else
+            {
+                document.getElementById("lastname").style.backgroundColor = "white";
+            }
+            if(emailAddress == "")
+            {
+                document.getElementById("e-mailaddress").style.backgroundColor = "red";
+                document.getElementById("e-mailaddress").focus();
+            }
+            else
+            {
+                document.getElementById("e-mailaddress").style.backgroundColor = "white";
+            }
+        }
+    </script>
     <body>
         <title>Contact Me</title>
         <center><h1>Contact Me!</h1></center>
         <center>Just fill out this quick form below to contact me directly!</center><p>
         <center><form action="Karter_Bernhardt_1" type=Post>
-            First Name: <input type="text"id="firstname"><br>
-            Last Name: <input type="text"id="lastname"><br>
-            E-Mail Address: <input type="text"id="e-mailaddress" <br>
-            <center>Do you accept the Terms and Conditions?<br>
+            First Name*: <input type="text"id="firstname"><br>
+            Last Name*: <input type="text"id="lastname"><br>
+            E-Mail Address*: <input type="text"id="e-mailaddress" <br>
+            <center>Do you accept the Terms and Conditions?*<br>
                 <input type="radio" name="answer" value="Yes">Yes<br>
                 <input type="radio" name="answer" value="No">No<br>
-            <button type="button" class="btn btn-primary">Submit</button>       
+            <button type="button" class="btn btn-primary" onclick="checkForm(name);">Submit</button>  
         </form></center>
-        <center><h2><a href="Karter_Bernhardt_1_Week_7.html" style="text-decoration: none;">Homepage!</a></h2></center>
-        <center><h2><a href="Karter_Bernhardt_2_Week_7.html" style="text-decoration: none;">Second Page!</a></h2></center>
+        <center>* = Field is Required</center>
+        <center><h2><a href="Karter_Bernhardt_1_Week_8.html" style="text-decoration: none;">Homepage!</a></h2></center>
+        <center><h2><a href="Karter_Bernhardt_2_Week_8.html" style="text-decoration: none;">Second Page!</a></h2></center>
        
     </body>
     </body>
-</html>
+</html> 
